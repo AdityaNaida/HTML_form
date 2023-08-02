@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    
+    <form action="/noction.php" method="post">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          placeholder="Enter your name here"
+          id="name"
+          required
+          value="Name"
+        />
+        <br />
+        <label for="email">email</label>
+        <input
+          type="email"
+          placeholder="Enter your email here"
+          id="email"
+          required
+          value="E-mail"
+        />
+        <br />
+        <label for="Number">Number</label>
+        <input
+          type="number"
+          placeholder="Enter your number here"
+          id="Number"
+          required
+          value="Number"
+        />
+        <br />
+        D.O.B <input type="date" placeholder="DOB" /> <br />
+  
+        <input type="password" placeholder="Enter your passsword" required />
+        <br />
+  
+        <label for="male">
+          <input type="radio" value="male" id="male" name="gender" /> male
+        </label>
+        <label for="female">
+          <input type="radio" value="female" id="female" name="gender" /> female
+        </label>
+        <label for="others">
+          <input type="radio" value="others" id="others" name="gender" /> others
+        </label>
+        <br />
+  
+        <input type="file" />
+  
+        <label for="math">
+          <input type="checkbox" value="math" id="math" name="math" />math
+        </label>
+        <label for="physics">
+          <input
+            type="checkbox"
+            value="physics"
+            id="physics"
+            name="physics"
+          />physics
+        </label>
+        <label for="chemistry">
+          <input
+            type="checkbox"
+            value="chemistry"
+            id="chemistry"
+            name="chemistry"
+          />chemistry
+        </label>
+        <label for="english">
+          <input
+            type="checkbox"
+            value="english"
+            id="english"
+            name="english"
+          />english
+        </label>
+        <label for="computer science">
+          <input
+            type="checkbox"
+            value="computer science"
+            id="computer science"
+            name="computer science"
+          />computer science
+        </label>
+        <br />
+  
+        <select name="city" id="city">
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Chennai">Chennai</option>
+        </select>
+        <br />
+  
+        <!-- <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Enter your valuable feedback here!"></textarea> -->
+        <textarea name="question"  cols="30" rows="10" placeholder="Enter your question here!"></textarea>
+  
+        <input type="submit" value="Submit" />
+      </form>
+</body>
+</html>
